@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/index.scss">
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <title>Lab 2</title>
 </head>
 
@@ -14,16 +15,20 @@
     <section class="upper">
         <div class="container">
             <ul class="upper__links">
-                <li>Sign up</li>
-                <li>Log in</li>
-            </ul>
+                <li class="upper__actions">
+                    <span>Sign up</span>
+                    <span>Log in</span>
+                </li>
 
-            <ul class="upper__icons">
-                <li>Message icon</li>
-                <li>Settings icon</li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                </li>
+
+                <li>
+                    <i class="fas fa-cog"></i>
+                </li>
             </ul>
         </div>
-
     </section>
 
     <header class="header">
@@ -59,12 +64,13 @@
                     </li>
 
                     <li class="navigation-menu__item">
-                        <a href="#">News</a>Video
+                        <a href="#">News Video</a>
                     </li>
                 </ul>
 
-                <span>burger icon</span>
+                <i class="fas fa-bars"></i>
             </nav>
+            <div class="underline"></div>
         </div>
     </header>
 

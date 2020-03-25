@@ -1,0 +1,36 @@
+.upper {
+    background-color: black;
+    color: white;
+
+    margin: 0;
+
+    //display: ;
+
+    &__links {
+        list-style: none;
+        height: 22px;
+        margin: 0;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        font-size: 12px;
+
+        & li:nth-child(2) {
+            margin-right: 10px;
+        }
+    }
+
+    &__actions {
+        list-style: none;
+        width: 100px;
+        height: 12px;
+
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+
+        font-size: 12px;
+    }
+}
