@@ -1,6 +1,59 @@
+@import './colors';
+
 .carousel {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+
+  background-color: #f7f9fa;
+
+  display: flex;
+  align-content: space-between;
+
+  border-bottom: 5px solid $red;
+
+  height: 250px;
+
+  &__image {
+    min-width: 380px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    //width: 380px;
+  }
+
+
+  position: relative;
+  &__controls {
+    bottom: 11px;
+    right: 11px;
+    position: absolute;
+
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.carousel-content {
+  padding: 0 20px;
+
+  &__title {
+    color: $red;
+    font-size: 30px;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+  }
+
+  &__description {
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }

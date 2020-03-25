@@ -1,11 +1,13 @@
+.main {
+    margin: 30px 0;
+}
+
 .main__container {
   display: grid;
-
-  margin: 30px 0;
 
   grid-template-columns: 620px 300px;
   grid-column-gap: 20px;
 
-  grid-template-rows: 306px 268px 215px;
+  grid-template-rows: 255px 268px 215px;
   grid-row-gap: 30px;
 }
