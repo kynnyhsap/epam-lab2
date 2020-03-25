@@ -1,0 +1,31 @@
+@import './colors';
+
+.footer {
+  padding: 20px 0;
+
+  border: 1px solid #d7d8d9;
+  background-color: #f7f9fa;
+
+  &__navigation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+
+    &-link {
+      margin-right: 5px;
+      a {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        color: $blue;
+      }
+    }
+  }
+
+  &__rights {
+    font-size: 12px;
+    font-weight: 400;
+    color: $black;
+  }
+
+}
