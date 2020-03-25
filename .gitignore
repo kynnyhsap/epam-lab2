@@ -1,2 +1,5 @@
 layout.psd
 .idea
+node_modules
+dist
+.cache
