@@ -1,6 +1,89 @@
+@import './colors';
+
 .video-aside {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+
+  .video-aside-heading .underline {
+    width: 118px;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: $purple;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin-top: 20px;
+
+    & a {
+      text-decoration: none;
+      color: $blue;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    & .underline {
+      border-width: 5px;
+    }
+  }
+}
+
+.video {
+  display: flex;
+  height: 90px;
+  margin-top: 10px;
+
+  &__preview {
+    width: 140px;
+    margin-right: 10px;
+    border: 1px solid green;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+    width: 140px;
+    color: $black;
+  }
+
+  position: relative;
+  &__play-button {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+
+    margin: 0;
+    //padding: 0;
+    //width: 20px;
+    //height: 15px;
+
+    color: white;
+    background-color: $purple;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    & i {
+      font-size: 12px;
+    }
+  }
 }
