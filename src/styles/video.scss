@@ -54,7 +54,6 @@
   &__preview {
     width: 140px;
     margin-right: 10px;
-    border: 1px solid green;
   }
 
   &__title {
@@ -64,6 +63,11 @@
     font-weight: 700;
     width: 140px;
     color: $black;
+
+    // hack to limit text by block size
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 80px;
   }
 
   position: relative;
@@ -84,6 +88,10 @@
 
     & i {
       font-size: 12px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 }

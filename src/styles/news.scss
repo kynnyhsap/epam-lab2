@@ -35,7 +35,6 @@
 
   &__image {
     width: 140px;
-    border: 1px solid green;
   }
 
   &__title {
@@ -43,5 +42,10 @@
     color: $black;
     font-size: 14px;
     font-weight: 400;
+
+    // hack to limit text to 4 rows
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 65px;
   }
 }

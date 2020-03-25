@@ -20,6 +20,10 @@
         & li:nth-child(2) {
             margin-right: 10px;
         }
+
+        & li:hover {
+          cursor: pointer;
+        }
     }
 
     &__actions {

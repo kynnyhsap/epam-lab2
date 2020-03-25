@@ -40,7 +40,10 @@
   &__button {
     width: 60px;
     height: 180px;
-    border: 1px solid green;
+  }
+
+  .control-button {
+    font-size: 48px;
   }
 }
 
@@ -48,8 +51,8 @@
   width: 140px;
 
   &__image {
-    border: 1px solid green;
     width: 140px;
+    height: 95px;
   }
 
   &__title {
@@ -64,5 +67,10 @@
     font-size: 14px;
     font-weight: 400;
     color: $blue;
+
+    // hack to limit text to 3 rows
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 50px;
   }
 }

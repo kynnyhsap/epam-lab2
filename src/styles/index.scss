@@ -26,3 +26,13 @@ body {
 .underline {
   border-bottom: 2px solid $black;
 }
+
+.control-button {
+  background: none;
+  border: none;
+  color: $red;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
