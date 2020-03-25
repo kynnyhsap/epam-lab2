@@ -9,9 +9,300 @@
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <title>Lab 2</title>
 </head>
+
 <body>
-    <main>
-        =)
+    <section class="upper">
+        <div class="container">
+            <ul class="upper__links">
+                <li>Sign up</li>
+                <li>Log in</li>
+            </ul>
+
+            <ul class="upper__icons">
+                <li>Message icon</li>
+                <li>Settings icon</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__item">
+                        <a href="#">News</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Finance</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Sports</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Tech</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Automotive</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Showbiz</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">Funny</a>
+                    </li>
+
+                    <li class="navigation-menu__item">
+                        <a href="#">News</a>Video
+                    </li>
+                </ul>
+
+                <span>burger icon</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="news">
+                <h1 class="news__heading">OMG News</h1>
+
+                <ul class="news__items news-items">
+                    <li>
+                        <div class="news-items__item news-item">
+                            <img class="news-item__image" src="./img/news/1.png" alt=""/>
+                            <h4 class="news-item__title">
+                                A YouTuber's fancy Bali vacation sure looked nice. Nope, the photos were taken in an Ikea
+                            </h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="news-items__item news-item">
+                            <img class="news-item__image" src="./img/news/2.png" alt=""/>
+                            <h4 class="news-item__title">
+                                Kayaker makes spectacular descent down 134-foot waterfall
+                            </h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="news-items__item news-item">
+                            <img class="news-item__image" src="./img/news/3.png" alt=""/>
+                            <h4 class="news-item__title">
+                                Assange's lawyers say he was told to call back when trying to warn US about leak
+                            </h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="news-items__item news-item">
+                            <img class="news-item__image" src="./img/news/4.png" alt=""/>
+                            <h4 class="news-item__title">
+                                CDC warns coronavirus spread in US is inevitable
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="carousel">
+                <img class="carousel__image" src="./img/carousel.png" alt="">
+
+                <article class="carousel__content carousel-content">
+                    <h1 class="carousel-content__title">
+                        Barca drew with Napoli
+                    </h1>
+
+                    <p class="carousel-content__description">
+                        Antoine Griezmann cancelled out Dries Mertens' landmark goal to leave the round of 16 tie all-square.
+                    </p>
+                </article>
+
+                <div class="carousel__controls carousel-controls">
+                    <button class="carousel-controls__button control-button control-button--prev"><</button>
+
+                    <span class="carousel-controls__page">7/20</span>
+
+                    <button class="carousel-controls__button control-button control-button--prev">></button>
+                </div>
+            </div>
+
+            <aside class="video-aside">
+                <h2 class="video-aside__heading">Video</h2>
+
+                <ul class="video-aside__list">
+                    <li>
+                        <div class="video">
+                            <img class="video__preview" src="./img/video/1.png" alt="">
+                            <h3 class="video__title">
+                                FBI raids fashion mogul's office after he was accused of sex assault and sex trafficking
+                            </h3>
+
+                            <button>
+                                <span>play icon</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="video">
+                            <img class="video__preview" src="./img/video/2.png" alt="">
+                            <h3 class="video__title">
+                                There is no fun in Egypt anymore
+                            </h3>
+
+                            <button>
+                                <span>play icon</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="video">
+                            <img class="video__preview" src="./img/video/3.png" alt="">
+                            <h3 class="video__title">
+                                Two students had a problem with exams after not finishing lab :D
+                            </h3>
+
+                            <button>
+                                <span>play icon</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="video">
+                            <img class="video__preview" src="./img/video/4.png" alt="">
+                            <h3 class="video__title">
+                                Scientists say this is not so easy...
+                            </h3>
+
+                            <button>
+                                <span>play icon</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="video">
+                            <img class="video__preview" src="./img/video/5.png" alt="">
+                            <h3 class="video__title">
+                                Best ‘The Video’ blind audiences
+                            </h3>
+
+                            <button>
+                                <span>play icon</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="video-aside__link" href="#">More videos</a>
+            </aside>
+
+            <section class="misc">
+                <h1 class="misc__heading">Misc</h1>
+
+                <div class="misc-slider">
+                    <button class="misc-slider__button control-button control-button--prev"><</button>
+
+                    <ul class="misc-slider__items misc-articles">
+                        <li>
+                            <article class="misc-articles__article misc-article">
+                                <h3 class="misc-article__title">Relations</h3>
+                                <img
+                                    class="misc-article__image"
+                                    src="./img/misc/Relations.png"
+                                    alt=""/>
+                                <h4 class="misc-article__subtitle">Actors IRL vs actors in movies</h4>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="misc-articles__article misc-article">
+                                <h3 class="misc-article__title">Workout</h3>
+                                <img
+                                    class="misc-article__image"
+                                    src="./img/misc/Workout.png"
+                                    alt=""/>
+                                <h4 class="misc-article__subtitle">Go go for workout!</h4>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="misc-articles__article misc-article">
+                                <h3 class="misc-article__title">Finance</h3>
+                                <img
+                                    class="misc-article__image"
+                                    src="./img/misc/Finance.png"
+                                    alt=""/>
+                                <h4 class="misc-article__subtitle">Different people - different incomes</h4>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="misc-articles__article misc-article">
+                                <h3 class="misc-article__title">LOL</h3>
+                                <img
+                                    class="misc-article__image"
+                                    src="./img/misc/LOL.png"
+                                    alt=""/>
+                                <h4 class="misc-article__subtitle">Funny reaction you wanna look at that</h4>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="misc-articles__article misc-article">
+                                <h3 class="misc-article__title">Auto</h3>
+                                <img
+                                    class="misc-article__image"
+                                    src="./img/misc/Auto.png"
+                                    alt=""/>
+                                <h4 class="misc-article__subtitle">New leak from Tesla engineers</h4>
+                            </article>
+                        </li>
+                    </ul>
+
+                    <button class="misc-slider__button control-button control-button--prev">></button>
+                </div>
+            </section>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__rights">© 2000-2020, ОMG "Holly Molly". All rights reserved.</p>
+
+            <ul class="footer__navigation">
+                <li class="footer__navigation-link">
+                    <a href="#">Help</a>
+                </li>
+
+                <li class="footer__navigation-link">
+                    <a href="#">Advertising</a>
+                </li>
+
+                <li class="footer__navigation-link">
+                    <a href="#">Rules & Conditions</a>
+                </li>
+
+                <li class="footer__navigation-link">
+                    <a href="#">Feedback</a>
+                </li>
+
+                <li class="footer__navigation-link">
+                    <a href="#">Privacy & Policy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
