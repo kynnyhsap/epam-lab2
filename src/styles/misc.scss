@@ -1,6 +1,68 @@
+@import './colors';
+
 .misc {
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      margin: 0 10px 0 0;
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    & .underline {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.misc-slider {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__items {
+    margin: 0 20px;
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    width: 60px;
+    height: 180px;
+    border: 1px solid green;
+  }
+}
+
+.misc-item {
+  width: 140px;
+
+  &__image {
+    border: 1px solid green;
+    width: 140px;
+  }
+
+  &__title {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: $red;
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $blue;
+  }
 }

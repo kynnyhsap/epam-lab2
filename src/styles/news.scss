@@ -1,6 +1,47 @@
+@import './colors';
+
 .news {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      margin: 0;
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    & .underline {
+      width: 500px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+
+.news-item {
+  width: 140px;
+
+  &__image {
+    width: 140px;
+    border: 1px solid green;
+  }
+
+  &__title {
+    margin: 0;
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
