@@ -1,10 +1,21 @@
-@import './colors';
+@import 'vars';
 
 .misc {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+
+  @media only screen and (max-width: $mobile) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    &__bottom-underline {
+      display: none;
+    }
+  }
 
   &__heading {
     display: flex;
@@ -28,13 +39,24 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: $mobile) {
+    &__items li:nth-child(4), &__items li:nth-child(5) {
+      display: none;
+    }
+  }
 
   &__items {
     margin: 0 20px;
     flex: 1;
     list-style: none;
     display: flex;
+
     justify-content: space-between;
+
+    //@media only screen and (max-width: $mobile) {
+    //  flex-wrap: wrap;
+    //  justify-content: flex-start;
+    //}
   }
 
   &__button {
@@ -74,3 +96,5 @@
     max-height: 50px;
   }
 }
+
+

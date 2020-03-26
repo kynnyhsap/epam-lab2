@@ -1,4 +1,4 @@
-@import './colors';
+@import './vars';
 
 .video-aside {
   grid-column-start: 2;
@@ -6,8 +6,18 @@
   grid-row-start: 1;
   grid-row-end: 2;
 
+  @media only screen and (max-width: $mobile) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
   .video-aside-heading .underline {
     width: 118px;
+    @media only screen and (max-width: $mobile) {
+      width: 270px;
+    }
   }
 
   &__heading {
@@ -42,6 +52,10 @@
 
     & .underline {
       border-width: 5px;
+
+      @media only screen and (max-width: $mobile) {
+        border-width: 0;
+      }
     }
   }
 }
@@ -62,6 +76,10 @@
     font-size: 14px;
     font-weight: 700;
     width: 140px;
+    @media only screen and (max-width: $mobile) {
+      font-size: 18px;
+      width: 270px;
+    }
     color: $black;
 
     // hack to limit text by block size
