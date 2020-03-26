@@ -1,4 +1,4 @@
-@import 'vars';
+@import '../vars';
 
 .news {
   grid-column-start: 1;
@@ -12,7 +12,7 @@
 
     & h1 {
       margin: 0;
-      color: $black;
+      color: $color-black;
       font-size: 24px;
       font-weight: 400;
     }
@@ -39,7 +39,7 @@
 
   &__title {
     margin: 0;
-    color: $black;
+    color: $color-black;
     font-size: 14px;
     font-weight: 400;
 
@@ -50,7 +50,7 @@
   }
 }
 
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $break-medium) {
   .news {
     grid-row-start: 2;
     grid-row-end: 3;

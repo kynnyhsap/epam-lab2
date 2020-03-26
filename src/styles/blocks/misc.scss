@@ -1,4 +1,4 @@
-@import 'vars';
+@import '../vars';
 
 .misc {
   grid-column-start: 1;
@@ -6,7 +6,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
 
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $break-medium) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -23,7 +23,7 @@
 
     & h1 {
       margin: 0 10px 0 0;
-      color: $black;
+      color: $color-black;
       font-size: 24px;
       font-weight: 400;
     }
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $break-medium) {
     &__items li:nth-child(4), &__items li:nth-child(5) {
       display: none;
     }
@@ -81,14 +81,14 @@
     margin: 10px 0;
     font-size: 14px;
     font-weight: 400;
-    color: $red;
+    color: $color-red;
   }
 
   &__subtitle {
     margin-top: 7px;
     font-size: 14px;
     font-weight: 400;
-    color: $blue;
+    color: $color-blue;
 
     // hack to limit text to 3 rows
     text-overflow: ellipsis;

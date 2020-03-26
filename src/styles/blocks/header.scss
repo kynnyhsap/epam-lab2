@@ -1,4 +1,4 @@
-@import 'vars';
+@import '../vars';
 
 .navigation {
   display: flex;
@@ -16,13 +16,13 @@
 
     margin-left: 9px;
 
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: $break-medium) {
       display: none;
     }
 
     &__item a {
       text-decoration: none;
-      color: $black;
+      color: $color-black;
     }
   }
 }

@@ -1,4 +1,4 @@
-@import 'vars';
+@import '../vars';
 
 .carousel {
   grid-column-start: 1;
@@ -11,7 +11,7 @@
   display: flex;
   align-content: space-between;
 
-  border-bottom: 5px solid $red;
+  border-bottom: 5px solid $color-red;
 
   height: 250px;
 
@@ -45,14 +45,14 @@
   padding: 0 20px;
 
   &__title {
-    color: $red;
+    color: $color-red;
     font-size: 30px;
-    font-family: "PT Serif", serif;
+    font-family: $font-2;
     font-weight: 400;
   }
 
   &__description {
-    color: $black;
+    color: $color-black;
     font-size: 14px;
     font-weight: 400;
   }

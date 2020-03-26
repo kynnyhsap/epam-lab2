@@ -1,13 +1,13 @@
-@import './upper';
-@import './header';
-@import './main';
-@import './news';
-@import './carusel';
-@import './misc';
-@import './video';
-@import './footer';
+@import './blocks/upper';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/news';
+@import './blocks/carusel';
+@import './blocks/misc';
+@import './blocks/video';
+@import './blocks/footer';
 
-@import 'vars';
+@import './vars';
 
 ul {
   margin: 0;
@@ -15,31 +15,29 @@ ul {
 }
 
 body {
-  font-family: "PT Sans", serif;
+  font-family: $font-1;
 }
 
 .container {
-  width: 940px;
+  width: $break-large;
   margin: auto;
+
+  @media only screen and (max-width: $break-medium) {
+    width: $break-medium - 20px;
+  }
 }
 
 .underline {
-  border-bottom: 2px solid $black;
+  border-bottom: 2px solid $color-black;
 }
 
 .control-button {
   background: none;
   border: none;
-  color: $red;
+  color: $color-red;
 
   &:hover {
     cursor: pointer;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .container {
-    width: 620px;
-    margin: auto;
-  }
-}
